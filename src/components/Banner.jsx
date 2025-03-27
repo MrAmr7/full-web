@@ -4,7 +4,7 @@ const Banner = ({query, handleInputChange}) => {
    
   return (
     <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14'>
-        <h1 className='text-5xl font-bold text-primary mb-3'>Find your <span className='text-blue'>new job</span> now</h1>
+        <h1 className='text-5xl font-bold text-primary mb-3'>Find your <span className='text-orange-500'>new job</span> now</h1>
         <p className='text-lg text-black/70 mb-8 '>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
     
         <form> 
@@ -29,7 +29,7 @@ const Banner = ({query, handleInputChange}) => {
                     />
                     <FiMapPin className='absolute mt-2.5 ml-2 text-gray-400 ' />
                 </div>
-                <button className='bg-blue py-2 px-8 text-white md:rounded-s-none rounded'>Search</button>
+                <button className='bg-orange-500 py-2 px-8 text-white md:rounded-s-none rounded'>Search</button>
             </div>
         </form>
     </div>

@@ -73,7 +73,7 @@ const Login = () => {
           <div className="flex justify-between items-center">
             <button
               type="submit"
-              className="bg-blue/70 hover:bg-blue/90 text-white py-2 px-6 rounded-lg w-full"
+              className="bg-orange-500/70 hover:bg-orange-500/90 text-white py-2 px-6 rounded-lg w-full"
             >
               Sign in
             </button>
@@ -81,7 +81,7 @@ const Login = () => {
         </form>
         <div className="mt-6 flex flex-col items-center justify-center">
           <span className="font-semibold">Or</span>
-          <Link className="text-blue text-sm hover:underline" to="/sign-up">Create account</Link>
+          <Link className="text-orange-500 text-sm hover:underline" to="/sign-up">Create account</Link>
         </div>
 
         <div className="text-right text-xs text-blue-500 mt-2 cursor-pointer hover:underline">

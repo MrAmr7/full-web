@@ -4,6 +4,7 @@ import Salary from './Salary'
 import JobPostingDate from './JobPostingDate'
 import WorkExperience from './WorkExperience'
 import EmploymentType from './EmploymentType'
+// import Dashboard from '../components/Dashbord'
 
 const Sidebar = ({ handleChange, handleClick}) => {
   return (
@@ -14,6 +15,7 @@ const Sidebar = ({ handleChange, handleClick}) => {
         <JobPostingDate handleChange={handleChange} />
         <WorkExperience handleChange={handleChange} />
         <EmploymentType handleChange={handleChange} />
+        {/* <Dashboard handleChange={handleChange} /> */}
 
     </div>
   )

@@ -45,7 +45,7 @@ const Signup = () => {
       };
 
       // Send user data to backend
-      const response = await fetch("http://127.0.0.1:3000/v1/users", {
+      const response = await fetch("https://jobs-backend-pdfb.onrender.com/create-user", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newUser),
@@ -167,13 +167,13 @@ const Signup = () => {
           </div>
 
 
-          <button type="submit" className="bg-blue/90 hover:bg-blue text-white py-2 px-6 rounded-lg w-full">
+          <button type="submit" className="bg-orange-500/90 hover:bg-orange-500 text-white py-2 px-6 rounded-lg w-full">
             Sign Up
           </button>
         </form>
 
         {/* Social Signup */}
-        <div className="mt-4 text-gray-500 text-sm">Already have account <Link to={"/login"} className="text-blue text-sm">Signin</Link> </div>
+        <div className="mt-4 text-gray-500 text-sm">Already have account <Link to={"/login"} className="text-orange-500 text-sm">Signin</Link> </div>
         <div className="flex gap-4 mt-2">
           <button className="flex items-center gap-2 hover:underline " onClick={handleGoogleSignup}>
             <FaGoogle className="text-red-500 text-sm" /> 

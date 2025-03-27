@@ -9,7 +9,7 @@ const JobDetails = () => {
   const [job, setJob] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/all-jobs/${id}`)
+    fetch(`https://jobs-backend-pdfb.onrender.com/${id}`)
       .then((res) => res.json())
       .then((data) => setJob(data));
   }, []);
@@ -37,7 +37,7 @@ const JobDetails = () => {
           <h2 className="font-semibold text-sm">Job Id: {id}</h2>
 
           <div>
-            <h1 className="text-blue font-semibold">{job.jobTitle}</h1>
+            <h1 className="bg-orange-500  font-semibold">{job.jobTitle}</h1>
             <p className="text-primary/70 text-sm ">{job.description}</p>
           </div>
 
@@ -48,12 +48,12 @@ const JobDetails = () => {
               Job Type
             </p>
             <div className="flex gap-3">
-              <button className="bg-blue px-8  text-white">
+              <button className="bg-orange-500 px-8  text-white">
                 {job.employmentType}
                 Temporary
               </button>
               <button
-                className="bg-purple-950/80 px-8 text-white"
+                className="bg-orange-500 /80 px-8 text-white"
                 onClick={handleApply}
               >
                 Apply Now

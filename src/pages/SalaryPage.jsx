@@ -30,7 +30,7 @@ console.log(searchText)
                 <input  className='py-2 pl-3 border focus:outline-none lg:w-6/12 mb-4 w-full'
                   type="text" name='search' id='search' 
                   onChange={(e) => setSearchText(e.target.value)}/>
-                  <button className='bg-blue text-white font-semibold px-8 py-2 rounded-sm mb-4' onClick={handleSearch}>Search</button>
+                  <button className='bg-orange-500  text-white font-semibold px-8 py-2 rounded-sm mb-4' onClick={handleSearch}>Search</button>
             </div>
         </div>
 
@@ -40,7 +40,7 @@ console.log(searchText)
                 salary.map((data) => (
                     <div key={data.id} className='shadow px-4 py-8'>
                         <h4 className='font-semibold text-xl '>{data.title}</h4>
-                        <p className='my-2 font-medium text-blue text-lg'>{data.salary}</p>
+                        <p className='my-2 font-medium text-orange-500  text-lg'>{data.salary}</p>
 
                         <div className='flex flex-wrap gap-4'>
                             <a href="/" className='underline'>{data.status}</a>
