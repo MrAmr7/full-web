@@ -45,12 +45,12 @@ const Signup = () => {
       };
 
       // Send user data to backend
-      const response = await fetch("https://jobs-backend-pdfb.onrender.com/create-user", {
+      const response = await fetch("https://jobs-portal-backend-4en8.onrender.com/create-user", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newUser),
       });
-
+      
       const data = await response.json();
 
       if (!response.ok) {

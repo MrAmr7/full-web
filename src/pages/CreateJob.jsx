@@ -13,7 +13,7 @@ formState: { errors },
 const onSubmit = (data) => {
     data.skills = selectedOption;
 // console.log(data);
-fetch("https://jobs-backend-pdfb.onrender.com/post-job", {
+fetch("https://jobs-portal-backend-4en8.onrender.com/post-job", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(data)

@@ -14,7 +14,7 @@ const MyJobs = () => {
   // Fetch jobs on mount
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://jobs-backend-pdfb.onrender.com/all-jobs") // Replace with your API URL
+    fetch("https://jobs-portal-backend-4en8.onrender.com/all-jobs") // Replace with your API URL
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
@@ -55,7 +55,7 @@ const MyJobs = () => {
     const confirmed = window.confirm("Are you sure you want to delete this job?");
     if (confirmed) {
       try {
-        const response = await fetch(`https://jobs-backend-pdfb.onrender.com/job/${id}`, {
+        const response = await fetch(`https://jobs-portal-backend-4en8.onrender.com/job/${id}`, {
           method: "DELETE",
         });
         const data = await response.json();

@@ -20,7 +20,7 @@ const UpdateJobs = () => {
 
   const onSubmit = (data) => {
     data.skills = selectedOption;
-    fetch(`https://jobs-backend-pdfb.onrender.com/update-job/${id}`, {
+    fetch(`https://jobs-portal-backend-4en8.onrender.com/update-job/${id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

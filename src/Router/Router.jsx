@@ -19,7 +19,7 @@ const router = createBrowserRouter([
             { path: "/post-job", element: <CreateJob /> },
             { path: "/my-job", element: <MyJobs /> },
             { path: "/salary", element: <SalaryPage /> },
-            { path: "/edit-job/:id", element: <UpdateJobs />, loader: ({params}) => fetch(`https://jobs-backend-pdfb.onrender.com/${params.id}`) },
+            { path: "/edit-job/:id", element: <UpdateJobs />, loader: ({params}) => fetch(`https://jobs-portal-backend-4en8.onrender.com/${params.id}`) },
             { path: "/job/:id", element: <JobDetails /> },
             //  { path: "/dashboard", element: <Dashboard /> },
 
